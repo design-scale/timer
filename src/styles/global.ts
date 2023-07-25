@@ -18,15 +18,27 @@ import {
     }
   },
 
+  :focus {
+    outline: 0;
+    box-shaddow: 0 0 0 2px ${props => props.theme['green-500']}
+  },
+
+  body {
+
+    color: #FFF;
+  },
+
   button {
     cursor: pointer;
   }
+  
 
 
   ${({ theme}) => css`
   
     body {
-      color: ${theme.secondary}
+      background: ${theme['gray-900']}
+
     },
 
   `}

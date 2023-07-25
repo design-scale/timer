@@ -23,7 +23,7 @@ import styled, {css} from 'styled-components'
     border-radius: 4px;
     border: 0;
     margin: 8px;
-    background-color: ${theme.primary};
+    background-color: ${theme['green-500']};
     color: white;
     
     `}
