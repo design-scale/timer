@@ -1,10 +1,6 @@
-import {
-    createGlobalStyle,
-    css
-  } from 'styled-components'
+import { createGlobalStyle, css } from 'styled-components'
 
-
-  const GlobalStyles = createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
@@ -20,7 +16,7 @@ import {
 
   :focus {
     outline: 0;
-    box-shaddow: 0 0 0 2px ${props => props.theme['green-500']}
+    box-shaddow: 0 0 0 2px ${(props) => props.theme['green-500']}
   },
 
   body {
@@ -34,7 +30,7 @@ import {
   
 
 
-  ${({ theme}) => css`
+  ${({ theme }) => css`
   
     body {
       background: ${theme['gray-900']}
