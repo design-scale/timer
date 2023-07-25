@@ -1,44 +1,28 @@
 import { createGlobalStyle, css } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
-  * {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-
-    &::before,
-    &::after {
-      box-sizing: inherit;
-    }
-  },
+  }
 
   :focus {
-    outline: 0;
-    box-shaddow: 0 0 0 2px ${(props) => props.theme['green-500']}
-  },
+    outline: none;
+    box-shadow: 0 0 0 2px ${(props) => props.theme['green-500']};
+  }
 
   body {
-
-    color: #FFF;
-  },
-
-  button {
-    cursor: pointer;
+    background: ${(props) => props.theme['gray-900']};
+    color: ${(props) => props.theme['gray-300']};
+    -webkit-font-smoothing: antialiased;
   }
-  
 
-
-  ${({ theme }) => css`
-  
-    body {
-      background: ${theme['gray-900']}
-
-    },
-
-  `}
-
+  body, input, textarea, button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+  }
 `
 
 export default GlobalStyles
