@@ -85,6 +85,10 @@ const baseInput = styled.input`
 export const Input = styled(baseInput)`
     flex: 1;
 
+    &::-webkit-calendar-picker-indicator {
+        display: none!important;
+    }
+
 `
 export const MinutesAmoutInput = styled(baseInput)`
     width: 4rem;
