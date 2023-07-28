@@ -61,6 +61,7 @@ export function Home(){
         reset()
     }
 
+
     const activeCycle = cycles.find(cycle => cycle.id === activeCycleId)
     console.log(activeCycle)
 
@@ -71,8 +72,7 @@ export function Home(){
     const secondsAmount = currentSeconds % 60
 
     const minutes = String(minutesAmount).padStart(2, '0')
-    const seconds = String(secondsAmount).padStart(2, '0')
-
+    const seconds = String(secondsAmount).padStart(2, '0')  
 
 
 
